@@ -1,0 +1,22 @@
+
+
+body{
+
+    /* background: linear-gradient(to right,to left, #ff7e5f, #feb47b); */
+    background: linear-gradient(to right, #00ff88, #ffffff);
+
+}
+a {
+    color: inherit; /* Inherits color from parent element, or you can specify a color */
+    text-decoration: none; /* Removes underline */
+    background: none; /* Removes any background styling */
+    border: none; /* Removes any border styling */
+  }
+
+.center-container{
+    text-align: center;
+    margin-top: 50px;
+}
+.center-absolute{
+    margin-top: 10px;
+}
