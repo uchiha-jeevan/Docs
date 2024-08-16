@@ -1,23 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 
-
-body{
-
-    /* background: linear-gradient(to right,to left, #ff7e5f, #feb47b); */
-    background: linear-gradient(to right, #00ff88, #ffffff);
-
-}
-a {
-    color: inherit; /* Inherits color from parent element, or you can specify a color */
-    text-decoration: none; /* Removes underline */
-    background: none; /* Removes any background styling */
-    border: none; /* Removes any border styling */
   }
-
-.center-container{
-    text-align: center;
-    margin-top: 50px;
-}
-.center-absolute{
+ body{
+    background-image: url('./images/2\ \(6\).jpg');
+    background-size: cover; /* Adjusts the image to cover the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    /* background: linear-gradient(to right, #00ff88, #bf65c2); */
+ }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  /* Container that uses CSS Grid to arrange buttons */
+  .button-container {
+    display: grid;                 /* Enable CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns for desktop */
+    gap: 20px;                     /* Space between grid items */
+    justify-content: center;       /* Center the grid within the container */
+    align-items: center;           /* Center items vertically */
+    padding: 20px;                 /* Padding around the grid container */
+  }
+ 
+  /* General button and link styles */
+  button, a.button {
+    display: inline-block;         /* Ensures the element behaves like a block-level element but does not break the flow */
+    padding: 10px 20px;            /* Add space inside the button */
     margin-top: 10px;
-    
-}
+    font-size: 16px;               /* Set font size */
+    text-align: center;            /* Center-align text inside the button */
+    text-decoration: none;         /* Remove underline from links */
+    color: white;                  /* Text color */
+    background-color: #539ff0;     /* Background color of the button */
+    border: none;                  /* Remove border for button */
+    border-radius: 5px;           /* Rounded corners */
+    cursor: pointer;               /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+ 
+  /* Add a hover effect for buttons */
+  button:hover, a.button:hover {
+    background-color: #0b6bd8;     /* Darker background on hover */
+  }
+ 
+  /* Add focus effect for better accessibility */
+  button:focus, a.button:focus {
+    outline: 2px solid #0056b3;    /* Outline color when focused */
+    outline-offset: 2px;           /* Offset the outline a bit */
+  }
+ 
+  /* Media query for screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .button-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns for mobile */
+    }
+  }
+ 
+  /* Media query for screens smaller than 480px (very small mobile devices) */
+  @media (max-width: 480px) {
+    .button-container {
+      grid-template-columns: 1fr;  /* 1 column layout for very small screens */
+    }
+  }
