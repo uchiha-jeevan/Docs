@@ -21,8 +21,8 @@ body::before {
   opacity: 0;
 }
 body{
-  transition: background-image 4s ease-in-out;
-  /* background-image: url('./images/2\ \(15\).jpg'); */
+  /* transition: background-image 4s ease-in-out; */
+  background-image: url('./images/2\ \(15\).jpg');
   background-size: cover; /* Adjusts the image to cover the entire area */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
