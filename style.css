@@ -22,7 +22,7 @@ body::before {
 }
 body{
   /* transition: background-image 4s ease-in-out; */
-  background-image: url('./images/2\ \(15\).jpg');
+  background-image: url('./images/2\ \(10\).jpg');
   background-size: cover; /* Adjusts the image to cover the entire area */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -36,16 +36,18 @@ a{
   color: aliceblue;
   font-weight: bolder;
 }
+
+
 .button-container {
   display: grid;                 /* Enable CSS Grid layout */
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns for desktop */
   gap: 10px;                     /* Space between grid items */
   justify-content: center;       /* Center the grid within the container */
   align-items: center;           /* Center items vertically */
-  padding: 20px;                 /* Padding around the grid container */
+  padding: 40px;                 /* Padding around the grid container */
 }
 
-
+/* 
 button,a.button {
   --color: #f181a3;
   font-family: inherit;
@@ -53,7 +55,7 @@ button,a.button {
   padding: 10px 20px; 
   margin-top: 10px;
   margin-left: 29px;
-  background-color: rgb(16, 209, 243);
+  background-color: rgb(109, 100, 238);
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -95,7 +97,7 @@ button:hover:before {
 button:active:before {
   background: #010058;
   transition: background 0s;
-}
+} */
 
 @media (max-width: 768px) {
   .button-container {
@@ -119,5 +121,108 @@ button:active:before {
 
 
 
+
+
+
+.button-62 {
+  margin: 10px;
+  background: linear-gradient(to bottom right, #ef7c47, #de5aff);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/*  ANother button code */
+
+/* 
+
+<a class="codepen-button"><span>Start Coding</span></a>
+
+*/
+
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #000;
+  border-radius: 3px;
+  height: 100%;
+}
 
 
